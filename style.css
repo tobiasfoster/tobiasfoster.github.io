@@ -1,52 +1,179 @@
-body {
-    background-image: url(ryan-pernofski-1248852-unsplash.jpg);
-    /* background-size: cover; */
-    background-size: 100vw 100vh;
-    /* background-size: auto; */
+a {
+    color: white !important; 
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.carousel-item {
+    text-align: center;
+    color: whitesmoke;
+    height: 40vh;
+    width: 100%;
+    background-image: url('images/darryl-brian-222961-unsplash.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.carousel-item>p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
 }
 
-.item {
-    margin: 10px;
+.carousel-item>button {
+    display: block;
+    border: 1px solid white;
+    color: whitesmoke;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 25%;
 }
 
-.item a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: white;
+.carousel-item>button:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
 }
 
-.container2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+#intro-text {
+ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
     align-items: center;
-    height: 100%;
-    margin-top: 15%;
-}
-
-.title {
-    font-size: 3.0em;
-    color: white;
+    background-image: url('images/johannes-plenio-317653-unsplash.jpg');
+    background-size: 100% 400px;;
+    background-repeat: no-repeat;
     text-align: center;
+    color: whitesmoke;
+    border-bottom: 2px solid gainsboro;
+    
+}
+
+#detail-cards { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0;
+    grid-column-gap: 5px;
+    background-color: rgb(131, 129, 129);
+    border-bottom: 2px solid gainsboro;
+}
+
+#detail-col-1, #detail-col-2, #detail-col-3 {
+    background-image: url('images/jamie-street-420851-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#feature {
+    background: linear-gradient(to bottom left, rgb(110, 108, 108), rgb(61, 59, 59));
+    /* background-color: rgb(34, 33, 33); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: whitesmoke;
+    justify-items: center;
+    border-bottom: 2px solid gainsboro;
+}
+
+#feature-text {
+    align-self: center;
+    margin-left: 5%;
+}
+
+#feature-img {
+    align-self: center;
+}
+
+#feature-img>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* margin: 20px; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#info-button {
+    border: 1px solid white;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+#info-button:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+}
+#feature-2 {
+    background: linear-gradient(to bottom right, rgb(110, 108, 108), rgb(61, 59, 59));
+    /* background-color: rgb(34, 33, 33); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: whitesmoke;
+    justify-items: center;
+    border-bottom: 2px solid gainsboro;
+}
+
+#feature-text-2 {
+    align-self: center;
+    margin-right: 5%;
+}
+
+#feature-img-2 {
+    align-self: center;
+}
+
+#feature-img-2>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* margin: 20px; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#info-button-2 {
+    border: 1px solid white;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+#info-button-2:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+#footer-container {
+    background-color: rgb(34, 33, 33);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 1px;
+    color: whitesmoke;
+    font-size: 0.7em;
+}
+
+#footer-address {
+    justify-self: end !important;
+    margin-top: 10px;
+    margin-right: 3%;
+
+}
+
+#footer-logo {
+    justify-self: center;
+}
+
+#footer-contact {
+    justify-self: start;
+    margin-left: 3%;
 }
 
 
 
-.btn {
-    opacity: 0.3;
-    transition: all 1s
-}
 
-.btn:hover {
-    opacity: 1.0;
-    font-weight: bold;
-}
+
